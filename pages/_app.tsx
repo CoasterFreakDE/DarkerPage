@@ -17,6 +17,12 @@ export default function App({Component, pageProps}: AppProps) {
             <meta name="msapplication-TileColor" content="#da532c"/>
             <meta name="theme-color" content="#ffffff"/>
 
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@coasterfreakde" />
+            <meta name="twitter:title" content="DarkerPage" />
+            <meta name="twitter:description" content="DarkMode Color Palettes for your next project" />
+            <meta name="twitter:image" content="/android-chrome-512x512.png" />
+
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet"/>
