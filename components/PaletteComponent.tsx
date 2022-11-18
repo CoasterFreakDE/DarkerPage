@@ -26,7 +26,11 @@ export default function PaletteComponent(tile: ColorPalette) {
 
                         return firstHSL.l - secondHSL.l
                     }).map((color) => (
-                        <li key={color} className="w-full h-24 cursor-pointer" style={{backgroundColor: color}}>
+                        <li key={color} className="w-full h-24 cursor-pointer" style={{backgroundColor: color}} onClick={() => {
+                            navigator.clipboard.writeText(color)
+                            const audio = new Audio('/assets/sounds/copy.mp3');
+                            audio.play();
+                        }}>
                             <div className="w-full h-full flex flex-row items-center justify-between p-6 space-x-6">
                                 <div className="truncate">
                                     <h3 className={classNames(textColor(color), 'text-2xl font-bold truncate')}>{color}</h3>

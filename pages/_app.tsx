@@ -27,8 +27,6 @@ export default function App({Component, pageProps}: AppProps) {
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet"/>
-
-            <script async={false} src={'https://icons.flawcra.cc/get.js'}/>
         </Head>
         <LogoComponent/>
         <Component {...pageProps} />
