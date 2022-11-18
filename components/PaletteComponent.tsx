@@ -6,7 +6,7 @@ import {HexColor} from "../data/Colors";
 
 export default function PaletteComponent(tile: ColorPalette) {
     return (
-        <div className="col-span-1 bg-[#181818] rounded-lg shadow overflow-y-auto" onClick={() => location.href = `/${tile.id}`}>
+        <div className="col-span-1 bg-[#181818] rounded-lg shadow overflow-y-auto">
             <div className="w-full flex flex-col border-[#707070] ">
                 <div className="w-full flex flex-row items-center justify-between p-6 space-x-6">
                     <Image className="w-10 h-10 rounded-full flex-shrink-0" src={tile.logo} alt={tile.name} width={64} height={64}/>
