@@ -6,6 +6,8 @@ export default interface Tile {
 
     name: string;
 
+    link: string;
+
     logo: string;
 
     tileType: TileType;

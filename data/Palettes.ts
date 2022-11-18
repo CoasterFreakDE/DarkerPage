@@ -5,6 +5,7 @@ export const Palettes: ColorPalette[] = [
     {
         id: "spotify",
         name: "Spotify",
+        link: "https://www.spotify.com/",
         logo: "/assets/images/spotify.png",
         tileType: TileTypes.PALETTE,
         colors: [
@@ -22,6 +23,7 @@ export const Palettes: ColorPalette[] = [
     {
         id: "youtube",
         name: "Youtube",
+        link: "https://www.youtube.com/",
         logo: "/assets/images/youtube.png",
         tileType: TileTypes.PALETTE,
         colors: [
@@ -37,6 +39,7 @@ export const Palettes: ColorPalette[] = [
     {
         id: "discord",
         name: "Discord",
+        link: "https://discord.com/",
         logo: "/assets/images/discord.png",
         tileType: TileTypes.PALETTE,
         colors: [
@@ -53,6 +56,56 @@ export const Palettes: ColorPalette[] = [
             "#57F287",
             "#dcddde",
             "#ffffff",
+        ]
+    },
+    {
+        id: "darker",
+        name: "DarkerPage",
+        link: "https://darker.page/",
+        logo: "/android-chrome-512x512.png",
+        tileType: TileTypes.PALETTE,
+        colors: [
+            "#121212",
+            "#181818",
+            "#282828",
+            "#404040",
+            "#9e9e9e",
+            "#000000",
+            "#ffffff",
+        ]
+    },
+    {
+        id: "pterodactyl",
+        name: "Pterodactyl",
+        link: "https://pterodactyl.io/",
+        logo: "/assets/images/pterodactyl.png",
+        tileType: TileTypes.PALETTE,
+        colors: [
+            "#10529f",
+            "#1e282c",
+            "#d64242",
+            "#408fec",
+            "#51b060",
+            "#fa9636",
+            "#131517",
+            "#1f2933",
+            "#3f4d5a",
+            "#1f2933",
+            "#13181e",
+            "#3f4d5a",
+            "#1f2933",
+            "#33404d",
+            "#eef1f6",
+            "#79589f",
+            "#515f6cbb",
+            "#408fec",
+            "#f5f5f5",
+            "#181f27",
+            "#1f2933",
+            "#9aa5b1",
+            "#1f2933",
+            "#1c252e",
+            "#1c252e",
         ]
     }
 ];
