@@ -11,8 +11,8 @@ export default function PaletteComponent(tile: ColorPalette) {
                 <div className="w-full flex flex-row items-center justify-between p-6 space-x-6">
                     <Image className="w-10 h-10 rounded-full flex-shrink-0" src={tile.logo} alt={tile.name} width={64} height={64}/>
                     <div className="flex-1 truncate">
-                        <h3 className="text-white text-2xl font-bold truncate text-right">{tile.name}</h3>
-                        <p className="mt-1 text-gray-500 text-sm font-normal truncate text-right"><i className={tile.tileType.icon} />{tile.tileType.name}</p>
+                        <h3 className="text-white text-2xl font-bold truncate text-left">{tile.name}</h3>
+                        <p className="mt-1 text-gray-500 text-sm font-normal truncate text-right relative inline-flex"><Image className={'text-right mr-1'} src={tile.tileType.icon}  alt={tile.tileType.name} width={13} height={13}/>{tile.tileType.name}</p>
                     </div>
                 </div>
                 <ul className="w-full flex flex-col">

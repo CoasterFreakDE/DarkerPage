@@ -4,5 +4,5 @@ export default class TileType {
 }
 
 export const TileTypes = {
-    PALETTE: new TileType("Palette", "fa-solid fa-palette fa-sm"),
+    PALETTE: new TileType("Palette", "/assets/svgs/palette.svg"),
 }
