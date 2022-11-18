@@ -3,8 +3,9 @@ import {HexColor, HSLColor, RGBColor} from "../data/Colors";
 
 export function textColor(backgroundColor: string): string {
     const hsl = hexToHsl(new HexColor(backgroundColor));
-    return hsl.l > 0.6 ? "text-black" : "text-white";
+    return hsl.l > 0.65 ? "text-black" : ((hsl.l >= 0.64 && hsl.l <= 0.65) ? ( hsl.h < 0.60 ? "text-black" : "text-white") : "text-white");
 }
+
 
 export function hexToHsl(hex: HexColor): HSLColor {
     const rgb = hexToRgb(hex);

@@ -2,7 +2,7 @@ import Image from "next/image";
 import ColorPalette from "../model/ColorPalette";
 import classNames from "classnames";
 import {hexToHsl, textColor} from "../utils/ColorUtils";
-import {HexColor} from "../data/Colors";
+import {HexColor, HSLColor} from "../data/Colors";
 
 export default function PaletteComponent(tile: ColorPalette) {
     return (
@@ -17,7 +17,14 @@ export default function PaletteComponent(tile: ColorPalette) {
                 </div>
                 <ul className="w-full flex flex-col">
                     {tile.colors.sort((first, second) => {
-                        return hexToHsl(new HexColor(first)).l - hexToHsl(new HexColor(second)).l
+                        const firstHSL: HSLColor = hexToHsl(new HexColor(first))
+                        const secondHSL: HSLColor = hexToHsl(new HexColor(second))
+
+                        if ((firstHSL.l >= 0.64 && firstHSL.l <= 0.66) && (secondHSL.l >= 0.64 && secondHSL.l <= 0.66)) {
+                            return secondHSL.h - firstHSL.h
+                        }
+
+                        return firstHSL.l - secondHSL.l
                     }).map((color) => (
                         <li key={color} className="w-full h-24 cursor-pointer" style={{backgroundColor: color}}>
                             <div className="w-full h-full flex flex-row items-center justify-between p-6 space-x-6">
