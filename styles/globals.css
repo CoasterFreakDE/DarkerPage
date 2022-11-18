@@ -15,14 +15,32 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
 
-  background: linear-gradient(
+  background-image: -webkit-gradient(
           to right,
           var(--darker-gray),
           var(--light-gray),
           var(--darker-gray)
   );
+    background-image: -moz-linear-gradient(
+          to right,
+          var(--darker-gray),
+          var(--light-gray),
+          var(--darker-gray)
+  );
+    background-image: -webkit-linear-gradient(
+          to right,
+          var(--darker-gray),
+          var(--light-gray),
+          var(--darker-gray)
+  );
+background-image: linear-gradient(
+        to right,
+        var(--darker-gray),
+        var(--light-gray),
+        var(--darker-gray)
+);
+
   background-size: 200%;
-  overflow: hidden;
   height: 100vh;
   animation: background-anim 60s linear infinite;
   color: white;
