@@ -10,6 +10,7 @@ export default function LogoComponent() {
                 <h1 className={"text-4xl font-black text-white"}>Darker</h1>
                 <p className={"text-[#9E9E9E] text-3xl font-bold"}>Phone</p>
             </div>
+            <div className={'hidden text-black'}></div>
         </div>
     )
 }
