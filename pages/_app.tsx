@@ -33,7 +33,7 @@ export default function App({Component, pageProps}: AppProps) {
         <LogoComponent/>
         <a className="github-fork-ribbon" href="https://github.com/CoasterFreakDE/DarkerPage" data-ribbon="Fork me on GitHub"
            title="Fork me on GitHub">Fork me on GitHub</a>
-        <a className="github-fork-ribbon right-bottom dark" href="https://devsky.one/impressum" data-ribbon="Imprint"
+        <a className="github-fork-ribbon fixed right-bottom dark" href="https://devsky.one/impressum" data-ribbon="Imprint"
            title="Imprint">Imprint</a>
         <Component {...pageProps} />
     </>
