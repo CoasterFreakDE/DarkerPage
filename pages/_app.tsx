@@ -11,6 +11,10 @@ export default function App({Component, pageProps}: AppProps) {
         <Head>
             <title>Darker</title>
             <meta name="description" content="DarkMode Color Palettes"/>
+            <meta charSet="UTF-8" />
+            <meta name="keywords" content="DARKMODE, PALETTES, CSS, HTML, WEB, COLORS, COLOR, DARK, BLACK, DESIGN" />
+            <meta name="author" content="CoasterFreakDE" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
