@@ -3,6 +3,8 @@ import type {AppProps} from 'next/app'
 import React from "react";
 import Head from "next/head";
 import LogoComponent from "../components/LogoComponent";
+import 'github-fork-ribbon-css/gh-fork-ribbon.css'
+
 
 export default function App({Component, pageProps}: AppProps) {
     return <>
@@ -29,6 +31,10 @@ export default function App({Component, pageProps}: AppProps) {
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet"/>
         </Head>
         <LogoComponent/>
+        <a className="github-fork-ribbon" href="https://github.com/CoasterFreakDE/DarkerPage" data-ribbon="Fork me on GitHub"
+           title="Fork me on GitHub">Fork me on GitHub</a>
+        <a className="github-fork-ribbon right-bottom dark" href="https://devsky.one/impressum" data-ribbon="Imprint"
+           title="Imprint">Imprint</a>
         <Component {...pageProps} />
     </>
 }
