@@ -107,5 +107,37 @@ export const Palettes: ColorPalette[] = [
             "#1c252e",
             "#1c252e",
         ]
+    },
+    {
+        id: "vsc",
+        name: "Visual Studio Code",
+        link: "https://code.visualstudio.com/",
+        logo: "/assets/images/vscode.png",
+        tileType: TileTypes.PALETTE,
+        colors: [
+            "#2c2c32",
+            "#1e1e1e",
+            "#252526",
+            "#333333",
+            "#323233",
+            "#43acf2",
+            "#ffffff",
+        ]
+    },
+    {
+        id: "github",
+        name: "GitHub",
+        link: "https://github.com/",
+        logo: "/assets/images/github.png",
+        tileType: TileTypes.PALETTE,
+        colors: [
+            "#0d1117",
+            "#161b22",
+            "#1f6feb",
+            "#58a6ff",
+            "#010409",
+            "#babbbd",
+            "#ffffff",
+        ]
     }
 ];
