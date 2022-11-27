@@ -139,5 +139,22 @@ export const Palettes: ColorPalette[] = [
             "#babbbd",
             "#ffffff",
         ]
+    },
+    {
+        id: "onedark",
+        name: "OneDark",
+        link: "https://github.com/atom/atom/tree/master/packages/one-dark-syntax",
+        logo: "/assets/images/atom.png",
+        tileType: TileTypes.PALETTE,
+        colors: [
+            "#282c33",
+            "#e06b74",
+            "#98c379",
+            "#e5c07a",
+            "#62aeef",
+            "#c678dd",
+            "#55b6c2",
+            "#abb2bf",
+        ]
     }
 ];
